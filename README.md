@@ -2,8 +2,9 @@
 
 **Find users who are on both Discord servers**
 
-This small Python bot helps you quickly identify which members are present on two Discord servers where your bot is added.  
+This small Python bot helps you quickly identify which members are present on two Discord servers where the user is.
 Useful for community managers who want to compare participants between servers.
+Can be run either as app or self-bot (against TOS dont use).
 
 ---
 
@@ -11,7 +12,7 @@ Useful for community managers who want to compare participants between servers.
 
 - Fetch members from two servers where your bot is present.  
 - Compare them and output a list of common users.  
-- Results can be displayed in the console or saved to a file (CSV/TXT).  
+- Results can be displayed in the console.
 - Fully respects Discord API and rate limits.
 
 ---
