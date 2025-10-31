@@ -1,7 +1,7 @@
 import discord
-import asyncio
+import os
 
-TOKEN = "TOKEN_DISCORD"  
+TOKEN = os.getenv("TOKEN_DISCORD")
 FIRSTSERVERID = SERVERID
 SECONDSERVERID = SERVERID 
 

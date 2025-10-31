@@ -27,3 +27,5 @@ Install `discord.py`:
 
 ```bash
 pip install -U discord.py
+```
+Rename .env.example to .env and change the token
