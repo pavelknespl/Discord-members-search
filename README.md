@@ -4,7 +4,7 @@
 
 This small Python bot helps you quickly identify which members are present on two Discord servers where the user is.
 Useful for community managers who want to compare participants between servers.
-Can be run either as app or self-bot (against TOS dont use).
+Only works with bots right now. User tokens are not supported at this moment.
 
 ---
 
@@ -28,4 +28,9 @@ Install `discord.py`:
 ```bash
 pip install -U discord.py
 ```
-Rename .env.example to .env and change the token
+Rename .env.example to .env and change the token  
+
+Run using:
+```bash
+python main.py <FirstServerId> <SecondServerId>
+```

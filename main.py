@@ -1,9 +1,22 @@
 import discord
 import os
+import sys
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except Exception:
+    pass
 
 TOKEN = os.getenv("TOKEN_DISCORD")
-FIRSTSERVERID = SERVERID
-SECONDSERVERID = SERVERID 
+
+if len(sys.argv) < 3:
+    raise SystemExit("Usage: python main.py <FirstServerId> <SecondServerId>")
+try:
+    FIRSTSERVERID = int(sys.argv[1])
+    SECONDSERVERID = int(sys.argv[2])
+except ValueError:
+    raise SystemExit("FirstServerId and SecondServerId must be integers (Discord guild IDs).")
 
 intents = discord.Intents.default()
 intents.members = True 
@@ -36,4 +49,4 @@ async def on_ready():
 
     await client.close()
 
-client.run(TOKEN, bot=False)
+client.run(TOKEN)
